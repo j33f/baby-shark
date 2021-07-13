@@ -12,7 +12,7 @@ JSON report
 
 ```shell
 npm install
-npm run app.js www.website.domain
+node app.js www.website.domain
 ```
 
 ## Dependencies
