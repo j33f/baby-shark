@@ -1,0 +1,17 @@
+{
+  "name": "baby-shark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "run": "node app.js"
+  },
+  "keywords": [],
+  "author": "Jeff <jeff@modulaweb.fr>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
+    "fastq": "^1.11.1"
+  }
+}
