@@ -1,2 +1,3 @@
 reports/*.json
 node_modules/
+.idea/
