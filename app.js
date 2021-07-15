@@ -74,8 +74,7 @@ const storeResult = (referrer, url, response) => {
  * @returns {Promise<AxiosResponse<any>>}
  */
 const crawl = (data) => {
-  return axios
-    .get(data.url)
+  return axios.get(data.url)
     .catch(error => {
       if (error.response) {
         storeResult(data.referrer, data.url, error.response);
@@ -135,7 +134,7 @@ const endProcess = () => {
 }
 
 // Create the queues
-const crawlQueue = fastq.promise(crawl, 15);
+const crawlQueue = fastq.promise(crawl, 4);
 const extractURLsQueue = fastq.promise(extractURLs, 15);
 
 // handle manual process end
